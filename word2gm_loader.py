@@ -375,7 +375,7 @@ class Word2GM(object):
                 init.run()
                 saver = tf.train.Saver()
                 saver.save(session, os.path.join(emb_logdir, "model.ckpt"), 0)
-                summary_writer = tf.train.SummaryWriter(emb_logdir)
+                summary_writer = tf.summary.FileWriter(emb_logdir)
                 config = projector.ProjectorConfig()
                 embedding = config.embeddings.add()
                 embedding.tensor_name = embedding_var.name

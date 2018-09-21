@@ -3,3 +3,8 @@ sftp-config.json
 *.pyc
 text8
 .ipynb_checkpoints
+
+.idea/
+.DS_store
+
+*.so
